@@ -1,0 +1,23 @@
+﻿<Window x:Class="triviaGUI.Game"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:triviaGUI"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="Game" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="114,15,0,0" TextWrapping="Wrap" Name="questionText" Text="TextBlock" VerticalAlignment="Top" FontSize="20" Width="504" Height="103"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,382,0,0" TextWrapping="Wrap" Name="tbTime" VerticalAlignment="Top" FontSize="20" Width="161" Height="42"/>
+        <TextBlock HorizontalAlignment="Left" Margin="274,382,0,0" TextWrapping="Wrap" Name="remainingText" Text="Remaining questions:" VerticalAlignment="Top" FontSize="20" Width="257" Height="42"/>
+        <TextBlock HorizontalAlignment="Left" Margin="536,382,0,0" TextWrapping="Wrap" Name="correctText" Text="Correct answers:" VerticalAlignment="Top" FontSize="20" Width="225" Height="42"/>
+        <Button Content="QUIT" HorizontalAlignment="Left" Margin="694,10,0,0" VerticalAlignment="Top" Width="88" Height="44" Click="QuitGame"/>
+        <Button Content="ANSWER1" HorizontalAlignment="Left" Name="Answer1Btn" Margin="166,140,0,0" VerticalAlignment="Top" Width="170" Height="75" Click="Answer1"/>
+        <Button Content="ANSWER2" HorizontalAlignment="Left" Name="Answer2Btn" Margin="451,140,0,0" VerticalAlignment="Top" Width="170" Height="75" Click="Answer2"/>
+        <Button Content="ANSWER3" HorizontalAlignment="Left" Name="Answer3Btn" Margin="451,261,0,0" VerticalAlignment="Top" Width="170" Height="75" Click="Answer3"/>
+        <Button Content="ANSWER4" HorizontalAlignment="Left" Name="Answer4Btn" Margin="166,261,0,0" VerticalAlignment="Top" Width="170" Height="75" Click="Answer4"/>
+        <ListBox Margin="134,123,0,0" Visibility="Hidden" Name="listBox2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="487" Height="213">
+        </ListBox>
+    </Grid>
+</Window>

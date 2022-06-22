@@ -1,0 +1,18 @@
+﻿<Window x:Class="triviaGUI.WaitingRoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:triviaGUI"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="WaitingRoom" Height="450" Width="800">
+    <Grid>
+        <ListBox Name="playersList" HorizontalAlignment="Left" Height="147" Margin="276,101,0,0" VerticalAlignment="Top" Width="123"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="256,73,0,0" TextWrapping="Wrap" Text="Players:" VerticalAlignment="Top" Width="120"/>
+        <Button Visibility="Hidden" Content="Leave" Click="leaveBtn_Click" Name="leaveBtn" HorizontalAlignment="Left" Margin="660,266,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Visibility="Hidden" Content="Close Room" Click="closeBtn_Click" Name="closeBtn" HorizontalAlignment="Left" Margin="660,266,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Visibility="Hidden" Content="Start Game" Click="startBtn_Click" Name="startBtn" HorizontalAlignment="Left" Margin="660,291,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
